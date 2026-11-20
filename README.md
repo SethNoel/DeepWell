@@ -10,4 +10,3 @@ The Network tab includes a schematic level map with selectable floors and resour
 
 The Chats tab uses Socket.IO for live online status and one-to-one messaging. Presence and the latest 100 messages per conversation are held in server memory only; they are not saved to MongoDB and are cleared when the server restarts. Demo seed accounts cannot sign in or receive chats. Each tab has its own citizen identity, so separate tabs in the same browser can be signed into different accounts.
 
-For production, set `NODE_ENV=production` and serve the app over HTTPS.
