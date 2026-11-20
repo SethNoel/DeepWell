@@ -1,0 +1,21 @@
+{
+  "name": "deepwell-civic-network",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Community resilience portal with MongoDB-backed citizen accounts",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed:demo": "node scripts/seed-demo.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "dotenv": "^16.6.1",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "mongodb": "^6.19.0",
+    "socket.io": "^4.8.4"
+  }
+}
