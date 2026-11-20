@@ -1,7 +1,5 @@
 # Deepwell Civic Network
 
-The app stores citizen profiles in the `citizens` collection and hashed, expiring sign-in tokens in the `authTokens` collection. Each browser tab stores its own sign-in token in tab-scoped session storage, so multiple tabs can stay signed into different citizen accounts. Passwords are stored as bcrypt hashes. Citizen registration currently collects a display name, email, and level.
-
 After signing in, citizens can use the Resources tab to post and close offers or requests for power, water, and food; Network to post community updates and request help; Health Watch to submit anonymous symptom and supply reports and view aggregated trends; and Citizens to search the public name-and-level directory. These features use the `resourceListings`, `communityPosts`, `helpRequests`, and `healthReports` collections. Health reports do not store account IDs or names and should be treated as community signals, not diagnoses.
 
 ## Demo data, map, and notifications
